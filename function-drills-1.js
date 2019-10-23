@@ -1,20 +1,15 @@
 'use strict';
 
-//1
-console.log('Hi, my name is Stephen and I\'m 33 years old');
-
-//2
-function createGreeting() {
-    console.log('Hi, my name is Stephen and I\'m 33 years old');
+function getYearOfBirth(age) {
+    return 2019 - age;
 }
 
-createGreeting();
-
-//3
-function createGreeting() {
-    return 'Hi, my name is Stephen and I\'m 33 years old';
+function createGreeting(name, age) {
+    const yob = 2019 - age;
+    return `Hi, my name is ${name} and I'm ${age} years old. I was born in ${yob}.`;
 }
 
-let greeting = createGreeting();
+let greeting = createGreeting('Stephen', 33);
 
 console.log(greeting);
+
